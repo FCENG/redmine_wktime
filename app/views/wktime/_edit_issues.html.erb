@@ -51,7 +51,7 @@ currencySym = ""
 					:padAt => 'begin', :padTill => i+2}%>	
 					<% thours[i] += entry.hours unless @prev_template%>
 					<% @total_hours += entry.hours unless @prev_template%>
-					<% currencySym = controller.getUnit(entry) %>
+					<% currencySym = '' %>
 				<% end %>
 			<% end %>
 			<% # write only the firt row for previous week template
