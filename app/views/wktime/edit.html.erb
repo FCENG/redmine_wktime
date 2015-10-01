@@ -44,7 +44,7 @@
 		<% if Setting.plugin_redmine_wktime['wktime_enter_comment_in_row'].blank? ||
 			Setting.plugin_redmine_wktime['wktime_enter_comment_in_row'].to_i == 0 %>
 			<p> <label><%= l(:field_comments) %></label>
-			<textarea name="_edit_comments_" id="_edit_comments_" value="" cols="25" rows="2"> </textarea> </p>
+			<textarea name="_edit_comments_" id="_edit_comments_" value="" cols="25" rows="2" maxlength="254"> </textarea> </p>
 		<% end %>
 
 		
